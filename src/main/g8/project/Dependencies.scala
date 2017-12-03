@@ -1,5 +1,10 @@
 import sbt._
 
-object Dependencies {
-  lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.0.3"
+object dependencies {
+  object cats {
+    val version = "1.0.0-RC1"
+    val org = "org.typelevel"
+
+    val core = org %% "cats-core" % version
+  }
 }
