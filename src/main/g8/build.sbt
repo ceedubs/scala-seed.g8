@@ -9,7 +9,9 @@ version in ThisBuild := "0.1.0-SNAPSHOT"
 lazy val core = (project in file("core"))
   .settings(
     moduleName := "core",
-    libraryDependencies += cats.core)
+    libraryDependencies ++= Seq(
+      cats.core,
+      cats.testkit % "test"))
   .settings(scalacOptionSettings)
 
 lazy val root = project
