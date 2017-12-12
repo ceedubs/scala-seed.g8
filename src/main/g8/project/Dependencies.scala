@@ -6,5 +6,6 @@ object dependencies {
     val org = "org.typelevel"
 
     val core = org %% "cats-core" % version
+    val testkit = org %% "cats-testkit" % version
   }
 }
